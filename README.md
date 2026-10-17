@@ -237,3 +237,13 @@ python3 -m unittest discover -s tests -v
 
 测试全部离线运行（`tests/fake_api.py` 模拟 PyPI / GitHub / OSV / endoflife.date），
 不消耗任何 API 配额。
+
+---
+
+## 支持作者
+
+如果这个项目帮你筛掉了几个不靠谱的依赖，可以请作者喝杯咖啡 ☕
+
+<p align="center">
+  <img src="payment.jpg" alt="收款码" width="280">
+</p>
