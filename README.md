@@ -240,6 +240,20 @@ python3 -m unittest discover -s tests -v
 
 ---
 
+## Star History
+
+<p align="center">
+  <a href="https://www.star-history.com/#akong789aaa/project_health_test&Date">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=akong789aaa/project_health_test&type=Date&theme=dark" />
+      <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=akong789aaa/project_health_test&type=Date" />
+      <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=akong789aaa/project_health_test&type=Date" />
+    </picture>
+  </a>
+</p>
+
+---
+
 ## 支持作者
 
 如果这个项目帮你筛掉了几个不靠谱的依赖，可以请作者喝杯咖啡 ☕
