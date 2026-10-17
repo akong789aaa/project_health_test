@@ -1,0 +1,585 @@
+{
+  "input": "pypi:pycrypto",
+  "target": {
+    "ecosystem": "pypi",
+    "name": "pycrypto",
+    "version": null,
+    "repo_override": "dlitz/pycrypto",
+    "raw_input": "pypi:pycrypto"
+  },
+  "generated_at": "2026-10-17T14:29:58+00:00",
+  "package": {
+    "ecosystem": "pypi",
+    "name": "pycrypto",
+    "version": "2.6.1",
+    "latest_version": "2.6.1",
+    "published_at": "2014-06-20T08:10:20.813938+00:00",
+    "release_count": 9,
+    "summary": "Cryptographic modules for Python.",
+    "homepage": "http://www.pycrypto.org/",
+    "repo_url": "",
+    "license": "Public domain",
+    "deprecated": false,
+    "deprecation_message": "",
+    "requires_python": "",
+    "python_versions": [],
+    "node_engines": "",
+    "node_versions": [],
+    "target_frameworks": [],
+    "dependencies": [],
+    "release_dates": [
+      "2010-12-17T03:18:31.767626+00:00",
+      "2011-10-22T22:01:31.684520+00:00",
+      "2011-11-04T20:31:00.898283+00:00",
+      "2012-01-13T18:31:25.949014+00:00",
+      "2012-05-24T15:09:51.090707+00:00",
+      "2013-08-11T11:19:28.592712+00:00",
+      "2013-08-11T11:20:08.658397+00:00",
+      "2013-08-11T11:20:32.313484+00:00",
+      "2014-06-20T08:10:20.813938+00:00"
+    ],
+    "yanked": false,
+    "source": "https://pypi.org/pypi/pycrypto/json",
+    "extra": {}
+  },
+  "repo": {
+    "owner": "pycrypto",
+    "name": "pycrypto",
+    "url": "https://github.com/pycrypto/pycrypto",
+    "archived": true,
+    "disabled": false,
+    "is_fork": false,
+    "stars": 2471,
+    "forks": 627,
+    "open_issues_and_prs": 212,
+    "pushed_at": "2022-01-26T16:04:12+00:00",
+    "created_at": "2010-11-30T02:10:21+00:00",
+    "default_branch": "master",
+    "license_spdx": "NOASSERTION",
+    "topics": [],
+    "commits": {
+      "window_days": 90,
+      "count_window": 0,
+      "sample_size": 0,
+      "human_count": 0,
+      "bot_count": 0,
+      "unique_human_authors": 0,
+      "top_author_share": 0.0,
+      "last_commit_at": null,
+      "last_commit_age_days": null,
+      "weekly_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "active_weeks": 0,
+      "count_is_exact": true,
+      "chore_human_count": 0,
+      "substantive_human_count": 0,
+      "baseline_weekly": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "baseline_commits_per_week": 0.0,
+      "recent_commits_per_week": 0.0,
+      "activity_trend": null,
+      "warnings": []
+    },
+    "issues": {
+      "window_days": 90,
+      "sampled": 0,
+      "created_window": 0,
+      "closed_window": 0,
+      "maintainer_replied_count": 0,
+      "human_replied_count": 0,
+      "bot_comment_share": 0.0,
+      "human_comment_count": 0,
+      "bot_comment_count": 0,
+      "median_first_human_response_hours": null,
+      "median_maintainer_response_hours": null,
+      "unanswered_open_count": 0,
+      "open_count": 0,
+      "maintainer_activity": false,
+      "opened_window": 0,
+      "closed_by_maintainer_window": 0,
+      "bug_labeled_count": 0,
+      "long_open_bugs": 0,
+      "sample_truncated": false,
+      "issues_disabled": false,
+      "warnings": []
+    },
+    "prs": {
+      "window_days": 90,
+      "sampled": 100,
+      "created_window": 0,
+      "human_created_window": 0,
+      "merged_window": 0,
+      "closed_unmerged_window": 0,
+      "human_closed_unmerged_window": 0,
+      "open_window": 0,
+      "stale_open_count": 57,
+      "bot_pr_count": 0,
+      "human_pr_count": 0,
+      "auto_merge_prs": 0,
+      "median_merge_hours": null,
+      "human_median_merge_hours": null,
+      "merged_samples": 0,
+      "bot_merged_samples": 0,
+      "human_merged_samples": 0,
+      "detail_truncated": false,
+      "sample_truncated": true,
+      "bot_pr_share": 0.0,
+      "merge_rate": null,
+      "bot_merge_share": null,
+      "sample_details": [],
+      "warnings": [
+        "PR 采样达到 100 条上限，统计为下限"
+      ]
+    },
+    "releases": {
+      "last_release_at": null,
+      "last_release_age_days": null,
+      "releases_window": 0,
+      "releases_365d": 0,
+      "releases_prev_90d": 0,
+      "release_trend": null,
+      "cadence_cliff": false,
+      "total_fetched": 0,
+      "prerelease_only": false,
+      "warnings": [
+        "仓库没有 GitHub Release 记录（可能只用 tag 发布）"
+      ]
+    },
+    "stars_recent_90d": 1,
+    "stars_recent_capped": false,
+    "star_velocity_recent_month": 1.9,
+    "star_velocity_lifetime_month": 12.95,
+    "star_growth_stalled": false,
+    "warnings": [
+      "仓库处于归档（archived）状态，官方已停止维护"
+    ],
+    "truncated": false,
+    "fetched_at": "2026-10-17T14:29:58+00:00"
+  },
+  "framework": {
+    "runtime": "Python",
+    "status": "unknown",
+    "score": 55,
+    "declared": [],
+    "latest_supported": "3.15",
+    "eol_declared": [],
+    "supported_cycles": [
+      "3.15",
+      "3.14",
+      "3.13",
+      "3.12",
+      "3.11"
+    ],
+    "gap": null,
+    "evidence": [
+      "包没有声明 Python 版本支持信息"
+    ],
+    "details": {},
+    "warnings": []
+  },
+  "security": {
+    "ecosystem": "pypi",
+    "package": "pycrypto",
+    "version": "2.6.1",
+    "vulns_current": [
+      {
+        "id": "GHSA-cq27-v7xp-c356",
+        "aliases": [
+          "CVE-2013-7459",
+          "PYSEC-2017-94"
+        ],
+        "summary": "Buffer Overflow in pycrypto",
+        "published": "2018-12-14T18:51:38+00:00",
+        "modified": "2024-10-18T22:23:12.251504+00:00",
+        "cvss_score": 9.8,
+        "cvss_vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "severity": "CRITICAL",
+        "affects_current": true,
+        "fixed_versions": [
+          "8dbe0dc3eea5c689d4f76b37b93fe216cf1f00d4"
+        ],
+        "url": "https://github.com/advisories/GHSA-cq27-v7xp-c356",
+        "ecosystem": "pypi"
+      },
+      {
+        "id": "GHSA-6528-wvf6-f6qg",
+        "aliases": [
+          "CVE-2018-6594",
+          "PYSEC-2018-97"
+        ],
+        "summary": "Pycrypto generates weak key parameters",
+        "published": "2018-07-12T20:29:26+00:00",
+        "modified": "2024-10-18T22:22:56.958480+00:00",
+        "cvss_score": 7.5,
+        "cvss_vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+        "severity": "HIGH",
+        "affects_current": true,
+        "fixed_versions": [],
+        "url": "https://github.com/advisories/GHSA-6528-wvf6-f6qg",
+        "ecosystem": "pypi"
+      }
+    ],
+    "history_count": 4,
+    "fixed_count": 2,
+    "deps_checked": 0,
+    "deps_total": 0,
+    "dep_risks": [],
+    "warnings": [],
+    "db_available": true
+  },
+  "dep_risks": [],
+  "dimensions": [
+    {
+      "key": "maintenance",
+      "title": "维护活跃度",
+      "weight": 20.0,
+      "score": 3,
+      "status": "bad",
+      "available": true,
+      "metrics": {
+        "commits_window": 0,
+        "human_commits": 0,
+        "bot_commits": 0,
+        "substantive_human_commits": 0,
+        "chore_human_commits": 0,
+        "unique_human_authors": 0,
+        "top_author_share": 0.0,
+        "last_commit_age_days": null,
+        "active_weeks": 0,
+        "baseline_commits_per_week": 0.0,
+        "recent_commits_per_week": 0.0,
+        "activity_trend": null,
+        "releases_window": 0,
+        "releases_365d": 0,
+        "last_release_age_days": 4502,
+        "stars_recent_90d": 1,
+        "star_velocity_recent_month": 1.9,
+        "star_velocity_lifetime_month": 12.95,
+        "stars": 2471,
+        "archived": true
+      },
+      "evidence": [
+        "近 90 天提交 0 次（真人 0 / 机器人 0）",
+        "最近提交：—",
+        "近 13 周中有 0 周存在提交",
+        "最近发布（包元数据）：2014-06-20（12.3 年前），近一年 0 次",
+        "仓库 2,471 stars · 627 forks · 已归档"
+      ],
+      "deductions": [
+        {
+          "points": 35,
+          "reason": "仓库已归档（archived），官方停止维护"
+        },
+        {
+          "points": 25,
+          "reason": "无法获取最近的提交时间"
+        },
+        {
+          "points": 4,
+          "reason": "近 90 天没有任何提交"
+        },
+        {
+          "points": 10,
+          "reason": "近 13 周只有 ≤2 周有提交"
+        },
+        {
+          "points": 18,
+          "reason": "超过 12 年没有新版本发布"
+        },
+        {
+          "points": 5,
+          "reason": "过去一年没有发布新版本"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "key": "issues",
+      "title": "Issue 响应",
+      "weight": 22.0,
+      "score": 42,
+      "status": "warn",
+      "available": true,
+      "metrics": {
+        "sampled": 0,
+        "opened_window": 0,
+        "maintainer_replied": 0,
+        "human_replied": 0,
+        "closed_by_maintainer": 0,
+        "closed_window": 0,
+        "bot_comment_share": 0.0,
+        "median_first_human_response_hours": null,
+        "median_maintainer_response_hours": null,
+        "unanswered_open": 0,
+        "open_count": 0,
+        "bug_labeled": 0,
+        "long_open_bugs": 0
+      },
+      "evidence": [
+        "近 90 天没有 Issue 活动，无法观测响应速度"
+      ],
+      "deductions": [
+        {
+          "points": 30,
+          "reason": "仓库已归档，Issue 不会再被官方处理"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "key": "prs",
+      "title": "PR 健康度",
+      "weight": 13.0,
+      "score": 63,
+      "status": "warn",
+      "available": true,
+      "metrics": {
+        "sampled": 100,
+        "created_window": 0,
+        "human_created": 0,
+        "bot_created": 0,
+        "merged_window": 0,
+        "closed_unmerged_window": 0,
+        "open_window": 0,
+        "stale_open": 57,
+        "bot_pr_share": 0.0,
+        "merge_rate": null,
+        "bot_merge_share": null,
+        "merged_samples": 0,
+        "median_merge_hours": null,
+        "human_median_merge_hours": null,
+        "governance": true
+      },
+      "evidence": [
+        "近 90 天新开 PR 0 条（真人 0 / 机器人 0）"
+      ],
+      "deductions": [
+        {
+          "points": 12,
+          "reason": "有 57 个超过 90 天未合并的 PR 积压"
+        },
+        {
+          "points": 25,
+          "reason": "仓库已归档，不再处理 PR"
+        }
+      ],
+      "notes": [
+        "未能抽查 PR 合并者（配额或数据不足）",
+        "PR 采样达到 100 条上限，统计为下限"
+      ]
+    },
+    {
+      "key": "framework",
+      "title": "运行时 / 框架",
+      "weight": 13.0,
+      "score": 100,
+      "status": "unknown",
+      "available": false,
+      "metrics": {},
+      "evidence": [
+        "包没有声明 Python 版本支持信息"
+      ],
+      "deductions": [],
+      "notes": []
+    },
+    {
+      "key": "security",
+      "title": "自身漏洞",
+      "weight": 20.0,
+      "score": 17,
+      "status": "bad",
+      "available": true,
+      "metrics": {
+        "unfixed_count": 2,
+        "critical": 1,
+        "high": 1,
+        "medium": 0,
+        "low": 0,
+        "history_count": 4,
+        "fixed_count": 2,
+        "max_severity": "CRITICAL"
+      },
+      "evidence": [
+        "当前版本 2.6.1 存在 2 条未修复漏洞：严重 1 / 高危 1 / 中危 0 / 低危 0",
+        "另有 2 条历史公告在后续版本已修复（当前版本太旧或需要升级）",
+        "CVE-2013-7459（CVSS 9.8 严重）：Buffer Overflow in pycrypto → 升级到 8dbe0dc3eea5c689d4f76b37b93fe216cf1f00d4 可修复",
+        "CVE-2018-6594（CVSS 7.5 高危）：Pycrypto generates weak key parameters（暂无修复版本）"
+      ],
+      "deductions": [
+        {
+          "points": 55,
+          "reason": "1 条未修复的严重漏洞（CVSS ≥ 9）"
+        },
+        {
+          "points": 28,
+          "reason": "1 条未修复的高危漏洞（CVSS 7.0–8.9）"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "key": "dependencies",
+      "title": "依赖安全",
+      "weight": 12.0,
+      "score": 100,
+      "status": "good",
+      "available": true,
+      "metrics": {
+        "deps_total": 0
+      },
+      "evidence": [
+        "没有声明运行时依赖，不存在依赖链漏洞风险"
+      ],
+      "deductions": [],
+      "notes": []
+    }
+  ],
+  "raw_total": 38.4,
+  "total_score": 35.0,
+  "grade": "D",
+  "verdict": "高风险，建议准备替代方案",
+  "verdict_level": "bad",
+  "confidence": "medium",
+  "confidence_reasons": [
+    "GitHub 采集存在降级：仓库处于归档（archived）状态，官方已停止维护",
+    "PR 数据基于最近 100 条采样",
+    "漏洞数据来自 OSV.dev（覆盖 GHSA / CVE / PyPA 等公告）"
+  ],
+  "hard_flags": [
+    {
+      "key": "archived",
+      "cap": 35.0,
+      "reason": "仓库已归档（archived），官方已停止维护"
+    },
+    {
+      "key": "critical_cve",
+      "cap": 40.0,
+      "reason": "当前版本存在未修复的严重漏洞 CVE-2013-7459（CVSS 9.8）"
+    },
+    {
+      "key": "no_human_maintainer",
+      "cap": 45.0,
+      "reason": "近 90 天没有任何可观测的真人维护者活动（真人提交 / 维护者回复或关闭 Issue / 合并或关闭 PR）"
+    }
+  ],
+  "recommendations": [
+    "升级到 pycrypto 8dbe0dc3eea5c689d4f76b37b93fe216cf1f00d4 可修复 CVE-2013-7459（严重，CVSS 9.8）",
+    "CVE-2018-6594（高危）目前没有修复版本：隔离使用、加缓解措施，或评估替代包",
+    "项目已归档：新项目不要引入，存量项目建议制定迁移计划（或 fork 自行维护）",
+    "近 90 天维护者对 Issue 几乎无响应：遇到问题大概率只能自助，建议评估是否有商业支持或活跃的社区替代",
+    "整体判断：不建议在新项目中引入；存量使用需尽快制定迁移或自维护计划"
+  ],
+  "warnings": [
+    "仓库处于归档（archived）状态，官方已停止维护",
+    "一票否决：仓库已归档（archived），官方已停止维护",
+    "一票否决：当前版本存在未修复的严重漏洞 CVE-2013-7459（CVSS 9.8）",
+    "一票否决：近 90 天没有任何可观测的真人维护者活动（真人提交 / 维护者回复或关闭 Issue / 合并或关闭 PR）"
+  ],
+  "sources": [
+    {
+      "name": "pypi registry",
+      "url": "https://pypi.org/pypi/pycrypto/json",
+      "retrieved_at": "2026-10-17T14:29:58+00:00",
+      "ok": true,
+      "note": ""
+    },
+    {
+      "name": "GitHub API",
+      "url": "https://github.com/dlitz/pycrypto",
+      "retrieved_at": "2026-10-17T14:29:58+00:00",
+      "ok": true,
+      "note": ""
+    },
+    {
+      "name": "endoflife.date",
+      "url": "https://endoflife.date",
+      "retrieved_at": "2026-10-17T14:29:58+00:00",
+      "ok": true,
+      "note": ""
+    },
+    {
+      "name": "OSV.dev",
+      "url": "https://osv.dev",
+      "retrieved_at": "2026-10-17T14:29:58+00:00",
+      "ok": true,
+      "note": ""
+    }
+  ],
+  "tool_version": "1.0.0",
+  "offline": false,
+  "duration_seconds": 1.8,
+  "extra": {
+    "github_remaining": 3,
+    "github_limit": 60,
+    "requests_made": 1,
+    "cache_hits": 11,
+    "offline_hits": 0,
+    "window_days": 90
+  },
+  "schema_version": 1
+}

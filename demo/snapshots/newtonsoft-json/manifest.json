@@ -1,0 +1,17 @@
+{
+  "name": "newtonsoft-json",
+  "input": "nuget:Newtonsoft.Json",
+  "description": "高使用量的 .NET JSON 库（TFM 目标框架分析样例）",
+  "repo_override": null,
+  "recorded_at": "2026-10-17T14:44:18Z",
+  "recorded_by": "oss-health/1.0.0",
+  "window_days": 90,
+  "pr_detail": 3,
+  "dep_check": 5,
+  "tool_version": "1.0.0",
+  "score": 74,
+  "grade": "B",
+  "verdict": "基本可用，注意跟踪",
+  "confidence": "medium",
+  "offline": false
+}

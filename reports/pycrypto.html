@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>开源项目健康度报告 · pypi:pycrypto @ 2.6.1</title>
+<style>
+:root {
+  --bg: #f6f7f9; --card: #ffffff; --text: #111827; --muted: #6b7280;
+  --border: #e5e7eb; --good: #16a34a; --warn: #d97706; --bad: #dc2626;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; background: var(--bg); color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
+    "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  line-height: 1.6; font-size: 15px;
+}
+.wrap { max-width: 980px; margin: 0 auto; padding: 28px 20px 60px; }
+.hero {
+  display: flex; align-items: center; justify-content: space-between; gap: 24px;
+  background: linear-gradient(135deg, #111827 0%, #1f2937 55%, #0f766e 100%);
+  color: #fff; border-radius: 18px; padding: 28px 30px;
+  box-shadow: 0 12px 30px rgba(17, 24, 39, .18);
+}
+.eyebrow { text-transform: uppercase; letter-spacing: .12em; font-size: 12px; opacity: .72; }
+.hero h1 { margin: 6px 0 8px; font-size: 30px; line-height: 1.2; }
+.target { font-size: 14px; opacity: .9; }
+.target code { background: rgba(255,255,255,.14); padding: 2px 8px; border-radius: 6px; }
+.target .sep { margin: 0 8px; opacity: .5; }
+.meta { font-size: 12px; opacity: .62; margin-top: 8px; }
+.ring {
+  --pct: 0;
+  width: 124px; height: 124px; flex: none; border-radius: 50%;
+  background: conic-gradient(var(--ring) calc(var(--pct) * 1%), rgba(255,255,255,.16) 0);
+  display: grid; place-items: center;
+}
+.ring-inner {
+  width: 96px; height: 96px; border-radius: 50%; background: #111827;
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+}
+.ring-inner b { font-size: 30px; line-height: 1; }
+.ring-inner span { font-size: 11px; opacity: .6; }
+.verdict {
+  display: flex; justify-content: space-between; align-items: center; gap: 12px;
+  margin: 18px 2px 22px; padding: 14px 18px; border-radius: 12px;
+  background: #fff; border: 1px solid var(--border); border-left: 5px solid var(--warn);
+}
+.verdict.good { border-left-color: var(--good); }
+.verdict.caution { border-left-color: var(--warn); }
+.verdict.bad { border-left-color: var(--bad); }
+.verdict-main { font-size: 18px; }
+.verdict-sub { color: var(--muted); font-size: 13px; }
+.card {
+  background: var(--card); border: 1px solid var(--border); border-radius: 14px;
+  padding: 20px 22px; margin-bottom: 18px;
+}
+.card h2 { margin: 0 0 14px; font-size: 17px; }
+.dims { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; }
+.dim { border: 1px solid var(--border); border-radius: 10px; padding: 12px 14px; }
+.dim.muted { opacity: .6; }
+.dim-head { display: flex; justify-content: space-between; align-items: baseline; }
+.dim-title { font-weight: 600; }
+.dim-score { font-size: 22px; font-weight: 700; }
+.dim-score small { font-size: 11px; color: var(--muted); font-weight: 400; }
+.track { height: 8px; background: #f1f5f9; border-radius: 99px; overflow: hidden; margin: 8px 0 6px; }
+.track i { display: block; height: 100%; border-radius: 99px; }
+.dim-status { font-size: 12px; color: var(--muted); }
+.dim p { margin: 6px 0 0; font-size: 12.5px; color: var(--muted); }
+.dim-status.ok { color: var(--good); } .dim-status.warn { color: var(--warn); }
+.dim-status.bad { color: var(--bad); }
+ul { margin: 8px 0; padding-left: 20px; }
+li { margin: 4px 0; }
+.findings li.bad { color: #991b1b; } .findings li.warn { color: #92400e; }
+.findings .points { margin-left: 8px; font-size: 12px; color: var(--muted); }
+p.ok, .ok { color: var(--good); }
+.positive { color: var(--muted); font-size: 13px; margin: 6px 0 0; }
+.table-wrap { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; font-size: 13px; }
+th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--border); vertical-align: top; }
+th { font-size: 12px; color: var(--muted); text-transform: uppercase; letter-spacing: .04em; }
+td.num { text-align: right; font-variant-numeric: tabular-nums; }
+.sev { padding: 1px 8px; border-radius: 99px; font-size: 12px; white-space: nowrap; }
+.sev.critical { background: #fee2e2; color: #991b1b; }
+.sev.high { background: #ffedd5; color: #9a3412; }
+.sev.medium { background: #fef9c3; color: #854d0e; }
+.sev.low { background: #e0f2fe; color: #075985; }
+a { color: #0f766e; }
+.recs li { margin: 8px 0; }
+.warnings li { color: #92400e; }
+.summary { color: var(--muted); }
+.muted { color: var(--muted); }
+footer { margin-top: 26px; font-size: 12.5px; color: var(--muted); }
+footer ul { padding-left: 20px; }
+.limits { margin-top: 10px; }
+@media (max-width: 640px) {
+  .hero { flex-direction: column; align-items: flex-start; }
+  .verdict { flex-direction: column; align-items: flex-start; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="hero">
+<div class="hero-text">
+<div class="eyebrow">开源项目健康度扫描器 · 报告</div>
+<h1>pycrypto</h1>
+<div class="target"><code>pypi:pycrypto @ 2.6.1</code><span class="sep">·</span>pycrypto/pycrypto · ★ 2,471 · 已归档 · NOASSERTION</div>
+<div class="meta">采集于 2026-10-17 14:29 UTC · 统计窗口近 90 天 · 耗时 1.8s</div>
+</div>
+<div class="ring" style="--pct:35;--ring:#dc2626"><div class="ring-inner"><b>35</b><span>/ 100</span></div></div>
+</header>
+<div class="verdict bad">
+<div class="verdict-main">🔴 <strong>D 级</strong> · 高风险，建议准备替代方案</div>
+<div class="verdict-sub">置信度 中 · 加权原始分 38.4</div>
+</div>
+<section class="card flags">
+<h2>触发的一票否决</h2><ul>
+<li class="bad">⛔ 仓库已归档（archived），官方已停止维护 → 总分封顶 35</li>
+<li class="bad">⛔ 当前版本存在未修复的严重漏洞 CVE-2013-7459（CVSS 9.8） → 总分封顶 40</li>
+<li class="bad">⛔ 近 90 天没有任何可观测的真人维护者活动（真人提交 / 维护者回复或关闭 Issue / 合并或关闭 PR） → 总分封顶 45</li>
+</ul></section>
+<section class="card"><h2>维度评分</h2><div class="dims">
+<div class="dim">
+<div class="dim-head"><span class="dim-title">维护活跃度</span><span class="dim-score">3<small>/100</small></span></div><div class="track"><i style="width:3%;background:#dc2626"></i></div><div class="dim-status bad">风险 · 权重 20%</div><p>近 90 天提交 0 次（真人 0 / 机器人 0）；最近提交：—</p>
+</div>
+<div class="dim">
+<div class="dim-head"><span class="dim-title">Issue 响应</span><span class="dim-score">42<small>/100</small></span></div><div class="track"><i style="width:42%;background:#dc2626"></i></div><div class="dim-status warn">注意 · 权重 22%</div><p>近 90 天没有 Issue 活动，无法观测响应速度</p>
+</div>
+<div class="dim">
+<div class="dim-head"><span class="dim-title">PR 健康度</span><span class="dim-score">63<small>/100</small></span></div><div class="track"><i style="width:63%;background:#d97706"></i></div><div class="dim-status warn">注意 · 权重 13%</div><p>近 90 天新开 PR 0 条（真人 0 / 机器人 0）</p>
+</div>
+<div class="dim muted"><div class="dim-head"><span class="dim-title">运行时 / 框架</span><span class="dim-score">—</span></div><p>数据缺失</p></div>
+<div class="dim">
+<div class="dim-head"><span class="dim-title">自身漏洞</span><span class="dim-score">17<small>/100</small></span></div><div class="track"><i style="width:17%;background:#dc2626"></i></div><div class="dim-status bad">风险 · 权重 20%</div><p>当前版本 2.6.1 存在 2 条未修复漏洞：严重 1 / 高危 1 / 中危 0 / 低危 0；另有 2 条历史公告在后续版本已修复（当前版本太旧或需要升级）</p>
+</div>
+<div class="dim">
+<div class="dim-head"><span class="dim-title">依赖安全</span><span class="dim-score">100<small>/100</small></span></div><div class="track"><i style="width:100%;background:#16a34a"></i></div><div class="dim-status ok">良好 · 权重 12%</div><p>没有声明运行时依赖，不存在依赖链漏洞风险</p>
+</div>
+</div></section>
+<section class="card"><h2>风险与发现</h2>
+<ul class="findings">
+<li class="bad">一票否决：仓库已归档（archived），官方已停止维护<span class="points">-100</span></li>
+<li class="bad">一票否决：当前版本存在未修复的严重漏洞 CVE-2013-7459（CVSS 9.8）<span class="points">-100</span></li>
+<li class="bad">一票否决：近 90 天没有任何可观测的真人维护者活动（真人提交 / 维护者回复或关闭 Issue / 合并或关闭 PR）<span class="points">-100</span></li>
+<li class="bad">[自身漏洞] 1 条未修复的严重漏洞（CVSS ≥ 9）<span class="points">-55</span></li>
+<li class="bad">[维护活跃度] 仓库已归档（archived），官方停止维护<span class="points">-35</span></li>
+<li class="bad">[Issue 响应] 仓库已归档，Issue 不会再被官方处理<span class="points">-30</span></li>
+<li class="warn">[PR 健康度] 有 57 个超过 90 天未合并的 PR 积压<span class="points">-12</span></li>
+</ul>
+<p class="positive">✔ 依赖安全 100 分：没有声明运行时依赖，不存在依赖链漏洞风险</p>
+</section>
+<section class="card"><h2>漏洞明细</h2>
+<p class="summary">当前版本 <code>2.6.1</code>：<b>2</b> 条未修复漏洞；历史公告 4 条，其中 2 条已修复。</p>
+<div class="table-wrap"><table><thead><tr><th>编号</th><th>严重度</th><th>CVSS</th><th>摘要</th><th>修复版本</th><th>公开时间</th></tr></thead><tbody>
+<tr><td><a href="https://github.com/advisories/GHSA-cq27-v7xp-c356" target="_blank" rel="noreferrer">CVE-2013-7459</a></td><td><span class="sev critical">严重</span></td><td class="num">9.8</td><td>Buffer Overflow in pycrypto</td><td>8dbe0dc3eea5c689d4f76b37b93fe216cf1f00d4</td><td>2018-12-14</td></tr>
+<tr><td><a href="https://github.com/advisories/GHSA-6528-wvf6-f6qg" target="_blank" rel="noreferrer">CVE-2018-6594</a></td><td><span class="sev high">高危</span></td><td class="num">7.5</td><td>Pycrypto generates weak key parameters</td><td>无</td><td>2018-07-12</td></tr>
+</tbody></table></div>
+</section>
+<section class="card"><h2>直接依赖安全</h2>
+<p class="summary">检查 0/0 个直接运行时依赖，0 个存在已知漏洞。</p>
+<p class="ok">✔ 直接依赖中未发现已知漏洞</p>
+</section>
+<section class="card"><h2>行动建议</h2><ol class="recs">
+<li>升级到 pycrypto 8dbe0dc3eea5c689d4f76b37b93fe216cf1f00d4 可修复 CVE-2013-7459（严重，CVSS 9.8）</li>
+<li>CVE-2018-6594（高危）目前没有修复版本：隔离使用、加缓解措施，或评估替代包</li>
+<li>项目已归档：新项目不要引入，存量项目建议制定迁移计划（或 fork 自行维护）</li>
+<li>近 90 天维护者对 Issue 几乎无响应：遇到问题大概率只能自助，建议评估是否有商业支持或活跃的社区替代</li>
+<li>整体判断：不建议在新项目中引入；存量使用需尽快制定迁移或自维护计划</li>
+</ol></section>
+<section class="card"><h2>数据警告 / 降级说明</h2><ul class="warnings">
+<li>仓库处于归档（archived）状态，官方已停止维护</li>
+<li>一票否决：仓库已归档（archived），官方已停止维护</li>
+<li>一票否决：当前版本存在未修复的严重漏洞 CVE-2013-7459（CVSS 9.8）</li>
+<li>一票否决：近 90 天没有任何可观测的真人维护者活动（真人提交 / 维护者回复或关闭 Issue / 合并或关闭 PR）</li>
+</ul></section>
+<footer>
+<p><b>数据来源：</b>pypi registry · GitHub API · endoflife.date · OSV.dev</p>
+<p><b>置信度说明：</b></p><ul class="reasons">
+<li>GitHub 采集存在降级：仓库处于归档（archived）状态，官方已停止维护</li>
+<li>PR 数据基于最近 100 条采样</li>
+<li>漏洞数据来自 OSV.dev（覆盖 GHSA / CVE / PyPA 等公告）</li>
+</ul>
+<p class="limits">已知局限：Issue / PR 统计基于最近 100 条采样；PR 合并者仅抽查少量已合并 PR；漏洞数据来自 OSV.dev；依赖按锁定版本或当前最新版本启发式检查，并非完整 SBOM 审计；运行时支持周期来自 endoflife.date；报告仅供决策参考。</p>
+<p class="muted">由 1.0.0 生成</p>
+</footer>
+</div></body></html>

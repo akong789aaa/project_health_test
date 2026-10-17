@@ -1,0 +1,17 @@
+{
+  "name": "pycrypto",
+  "input": "pypi:pycrypto",
+  "description": "2014 年后停更、存在未修复 CVE 的加密库（高风险样例）",
+  "repo_override": "dlitz/pycrypto",
+  "recorded_at": "2026-10-17T14:29:58Z",
+  "recorded_by": "oss-health/1.0.0",
+  "window_days": 90,
+  "pr_detail": 4,
+  "dep_check": 8,
+  "tool_version": "1.0.0",
+  "score": 35,
+  "grade": "D",
+  "verdict": "高风险，建议准备替代方案",
+  "confidence": "medium",
+  "offline": false
+}

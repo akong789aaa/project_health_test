@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "oss-health"
+version = "1.0.0"
+description = "开源项目健康度扫描器：综合判断一个包「还能不能用」"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "oss-health" }]
+keywords = ["open-source", "health", "maintenance", "cve", "osv", "supply-chain"]
+dependencies = []  # 有意保持纯标准库实现
+
+[project.scripts]
+oss-health = "oss_health.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["oss_health*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"

@@ -1,0 +1,751 @@
+{
+  "input": "pypi:requests",
+  "target": {
+    "ecosystem": "pypi",
+    "name": "requests",
+    "version": null,
+    "repo_override": null,
+    "raw_input": "pypi:requests"
+  },
+  "generated_at": "2026-10-17T14:32:41.928475+00:00",
+  "package": {
+    "ecosystem": "pypi",
+    "name": "requests",
+    "version": "2.34.2",
+    "latest_version": "2.34.2",
+    "published_at": "2026-05-14T19:25:27.735762+00:00",
+    "release_count": 160,
+    "summary": "Python HTTP for Humans.",
+    "homepage": "https://requests.readthedocs.io",
+    "repo_url": "https://github.com/psf/requests",
+    "license": "Apache-2.0",
+    "deprecated": false,
+    "deprecation_message": "",
+    "requires_python": ">=3.10",
+    "python_versions": [
+      "3.10",
+      "3.11",
+      "3.12",
+      "3.13",
+      "3.14",
+      "3.15"
+    ],
+    "node_engines": "",
+    "node_versions": [],
+    "target_frameworks": [],
+    "dependencies": [
+      {
+        "name": "charset_normalizer",
+        "spec": "<4,>=2",
+        "kind": "runtime",
+        "ecosystem": "pypi"
+      },
+      {
+        "name": "idna",
+        "spec": "<4,>=2.5",
+        "kind": "runtime",
+        "ecosystem": "pypi"
+      },
+      {
+        "name": "urllib3",
+        "spec": "<3,>=1.26",
+        "kind": "runtime",
+        "ecosystem": "pypi"
+      },
+      {
+        "name": "certifi",
+        "spec": ">=2023.5.7",
+        "kind": "runtime",
+        "ecosystem": "pypi"
+      },
+      {
+        "name": "PySocks",
+        "spec": "!=1.5.7,>=1.5.6",
+        "kind": "extra",
+        "ecosystem": "pypi"
+      },
+      {
+        "name": "chardet",
+        "spec": "<8,>=3.0.2",
+        "kind": "extra",
+        "ecosystem": "pypi"
+      }
+    ],
+    "release_dates": [
+      "2011-02-14T08:49:42.641660+00:00",
+      "2011-02-14T16:38:12.392550+00:00",
+      "2011-02-14T18:58:40.410171+00:00",
+      "2011-02-15T15:47:29.058010+00:00",
+      "2011-02-19T07:03:14.518479+00:00",
+      "2011-02-25T14:58:38.361577+00:00",
+      "2011-04-01T20:55:03.064666+00:00",
+      "2011-04-15T23:30:50.899634+00:00",
+      "2011-05-12T10:03:24.258074+00:00",
+      "2011-05-14T20:30:44.001002+00:00",
+      "2011-05-15T05:58:43.415820+00:00",
+      "2011-05-25T18:54:05.328955+00:00",
+      "2011-06-22T04:44:39.288841+00:00",
+      "2011-07-24T05:01:45.612333+00:00",
+      "2011-08-17T10:33:05.720565+00:00",
+      "2011-08-21T00:25:37.203918+00:00",
+      "2011-10-09T13:12:45.395766+00:00",
+      "2011-10-14T03:35:13.523706+00:00",
+      "2011-10-14T04:23:31.793480+00:00",
+      "2011-10-19T07:30:59.708543+00:00",
+      "2011-10-19T09:39:56.534103+00:00",
+      "2011-10-23T03:33:24.637553+00:00",
+      "2011-10-23T21:19:22.099184+00:00",
+      "2011-10-23T21:40:37.623156+00:00",
+      "2011-10-23T23:04:13.595145+00:00",
+      "2011-10-27T00:36:25.355189+00:00",
+      "2011-11-05T04:32:37.598633+00:00",
+      "2011-11-07T20:19:31.227072+00:00",
+      "2011-11-13T06:52:10.360103+00:00",
+      "2011-11-15T16:01:47.827430+00:00",
+      "2011-11-19T22:28:31.706305+00:00",
+      "2011-11-27T16:44:51.946354+00:00",
+      "2011-12-11T17:40:28.585204+00:00",
+      "2011-12-14T16:43:21.464961+00:00",
+      "2011-12-19T01:18:29.495054+00:00",
+      "2011-12-24T09:18:54.805200+00:00",
+      "2011-12-28T09:55:45.489845+00:00",
+      "2011-12-28T10:34:17.815200+00:00",
+      "2011-12-28T10:51:35.541114+00:00",
+      "2012-01-06T07:11:02.635935+00:00",
+      "2012-01-19T03:39:58.591876+00:00",
+      "2012-01-19T16:51:33.637035+00:00",
+      "2012-01-22T05:08:17.091441+00:00",
+      "2012-01-23T08:22:52.352375+00:00",
+      "2012-02-15T09:48:52.830436+00:00",
+      "2012-02-20T20:10:57.584946+00:00",
+      "2012-02-20T22:21:31.091713+00:00",
+      "2012-02-26T05:17:54.135905+00:00",
+      "2012-03-08T01:50:58.069132+00:00",
+      "2012-03-09T17:59:54.950126+00:00",
+      "2012-03-31T05:47:56.690051+00:00",
+      "2012-04-23T04:29:36.868120+00:00",
+      "2012-05-03T01:18:47.376345+00:00",
+      "2012-05-08T07:21:59.920122+00:00",
+      "2012-05-30T02:54:18.564587+00:00",
+      "2012-06-08T04:22:28.683979+00:00",
+      "2012-06-29T02:37:41.500479+00:00",
+      "2012-07-12T23:20:43.867603+00:00",
+      "2012-07-27T08:22:09.864284+00:00",
+      "2012-07-27T09:23:41.969623+00:00",
+      "2012-08-06T08:46:22.516645+00:00",
+      "2012-08-19T00:47:48.501903+00:00",
+      "2012-08-20T15:24:42.439401+00:00",
+      "2012-08-25T15:26:50.954170+00:00",
+      "2012-09-02T08:50:39.106639+00:00",
+      "2012-10-01T17:30:05.176526+00:00",
+      "2012-10-27T15:08:51.460827+00:00",
+      "2012-12-17T15:00:05.110522+00:00",
+      "2012-12-17T18:53:51.251872+00:00",
+      "2012-12-17T19:04:31.658169+00:00",
+      "2012-12-18T09:51:12.406576+00:00",
+      "2012-12-23T07:45:10.417631+00:00",
+      "2013-01-10T07:13:41.901588+00:00",
+      "2013-03-31T05:28:47.574555+00:00",
+      "2013-05-20T20:11:09.817186+00:00",
+      "2013-05-21T21:44:44.405678+00:00",
+      "2013-05-25T16:48:36.421087+00:00",
+      "2013-11-15T19:09:51.527323+00:00",
+      "2013-11-15T19:12:20.555241+00:00",
+      "2013-12-05T22:51:41.312732+00:00",
+      "2014-01-09T19:33:37.785784+00:00",
+      "2014-01-23T18:26:15.042092+00:00",
+      "2014-05-16T17:57:05.539691+00:00",
+      "2014-08-29T14:32:48.896671+00:00",
+      "2014-09-09T16:35:12.771388+00:00",
+      "2014-10-05T17:15:53.632369+00:00",
+      "2014-10-06T09:44:49.312197+00:00",
+      "2014-12-01T23:27:58.129251+00:00",
+      "2014-12-23T17:56:08.223795+00:00",
+      "2015-02-23T22:37:46.983551+00:00",
+      "2015-02-24T16:33:58.415782+00:00",
+      "2015-03-14T16:44:48.433132+00:00",
+      "2015-04-23T02:27:12.848707+00:00",
+      "2015-04-23T16:31:01.589754+00:00",
+      "2015-05-03T15:01:28.821871+00:00",
+      "2015-10-06T14:48:08.860481+00:00",
+      "2015-10-13T12:56:41.375848+00:00",
+      "2015-12-15T15:30:34.276097+00:00",
+      "2015-12-21T14:55:10.646407+00:00",
+      "2016-04-29T21:57:23.021820+00:00",
+      "2016-04-29T22:12:39.027730+00:00",
+      "2016-08-08T15:07:35.742323+00:00",
+      "2016-08-17T20:04:30.871534+00:00",
+      "2016-11-15T10:32:06.217543+00:00",
+      "2016-11-16T10:45:42.744303+00:00",
+      "2016-11-30T12:39:34.983059+00:00",
+      "2016-12-01T10:49:08.086038+00:00",
+      "2016-12-14T11:39:39.385140+00:00",
+      "2017-01-18T12:43:12.017010+00:00",
+      "2017-01-24T12:53:28.060212+00:00",
+      "2017-05-09T15:45:05.815269+00:00",
+      "2017-05-09T19:00:30.585216+00:00",
+      "2017-05-10T14:05:43.749338+00:00",
+      "2017-05-27T02:14:22.414350+00:00",
+      "2017-05-27T03:48:25.729621+00:00",
+      "2017-05-27T13:44:20.358570+00:00",
+      "2017-05-27T14:53:31.935404+00:00",
+      "2017-05-27T16:24:49.598403+00:00",
+      "2017-05-27T21:17:41.534350+00:00",
+      "2017-05-28T04:35:48.205458+00:00",
+      "2017-05-29T17:24:38.973041+00:00",
+      "2017-05-29T19:59:40.643067+00:00",
+      "2017-05-29T21:33:37.405434+00:00",
+      "2017-05-29T21:53:22.237539+00:00",
+      "2017-06-14T15:44:37.484470+00:00",
+      "2017-06-14T17:51:28.960131+00:00",
+      "2017-07-25T15:23:18.103843+00:00",
+      "2017-08-02T13:23:35.599515+00:00",
+      "2017-08-15T13:23:46.348325+00:00",
+      "2018-06-12T14:46:17.223245+00:00",
+      "2018-06-14T13:40:41.014589+00:00",
+      "2018-10-18T15:46:12.763897+00:00",
+      "2018-11-08T17:20:31.391071+00:00",
+      "2018-12-10T15:40:11.072000+00:00",
+      "2019-05-16T14:37:18.093794+00:00",
+      "2020-06-17T16:30:11.334360+00:00",
+      "2020-06-17T16:30:14.123456+00:00",
+      "2020-11-11T20:05:17.193088+00:00",
+      "2020-12-16T19:38:36.779257+00:00",
+      "2021-07-13T14:55:08.972521+00:00",
+      "2022-01-03T15:09:28.067178+00:00",
+      "2022-01-05T15:40:51.698067+00:00",
+      "2022-06-09T14:44:36.903113+00:00",
+      "2022-06-29T15:13:42.715104+00:00",
+      "2023-01-12T16:24:54.687770+00:00",
+      "2023-04-26T15:24:34.435420+00:00",
+      "2023-05-03T15:44:06.936747+00:00",
+      "2023-05-22T15:12:44.175995+00:00",
+      "2024-05-20T16:11:48.306524+00:00",
+      "2024-05-20T22:08:48.995460+00:00",
+      "2024-05-21T18:51:32.819665+00:00",
+      "2024-05-29T15:37:49.536140+00:00",
+      "2025-06-09T16:43:07.340534+00:00",
+      "2025-08-18T20:46:02.573425+00:00",
+      "2026-03-25T15:10:41.586809+00:00",
+      "2026-03-30T16:09:15.531306+00:00",
+      "2026-05-03T20:21:41.747826+00:00",
+      "2026-05-11T19:29:51.717818+00:00",
+      "2026-05-13T19:20:24.662635+00:00",
+      "2026-05-14T19:25:27.735762+00:00"
+    ],
+    "yanked": false,
+    "source": "https://pypi.org/pypi/requests/json",
+    "extra": {}
+  },
+  "repo": {
+    "owner": "psf",
+    "name": "requests",
+    "url": "https://github.com/psf/requests",
+    "archived": false,
+    "disabled": false,
+    "is_fork": false,
+    "stars": 54472,
+    "forks": 13115,
+    "open_issues_and_prs": 244,
+    "pushed_at": "2026-09-28T16:55:48+00:00",
+    "default_branch": "main",
+    "license_spdx": "Apache-2.0",
+    "topics": [
+      "client",
+      "cookies",
+      "forhumans",
+      "http",
+      "humans",
+      "python",
+      "python-requests",
+      "requests"
+    ],
+    "commits": {
+      "window_days": 90,
+      "count_window": 11,
+      "sample_size": 11,
+      "human_count": 1,
+      "bot_count": 10,
+      "unique_human_authors": 1,
+      "top_author_share": 1.0,
+      "last_commit_at": "2026-09-21T20:22:33+00:00",
+      "last_commit_age_days": 25,
+      "weekly_counts": [],
+      "active_weeks": 0,
+      "count_is_exact": true,
+      "chore_human_count": 1,
+      "substantive_human_count": 0,
+      "warnings": []
+    },
+    "issues": {
+      "window_days": 90,
+      "sampled": 32,
+      "created_window": 18,
+      "closed_window": 8,
+      "maintainer_replied_count": 5,
+      "human_replied_count": 17,
+      "bot_comment_share": 0.04225352112676056,
+      "human_comment_count": 68,
+      "bot_comment_count": 3,
+      "median_first_human_response_hours": 3.5813888888888887,
+      "median_maintainer_response_hours": 6.0775,
+      "unanswered_open_count": 1,
+      "open_count": 17,
+      "maintainer_activity": true,
+      "opened_window": 18,
+      "closed_by_maintainer_window": 5,
+      "sample_truncated": false,
+      "issues_disabled": false,
+      "warnings": [
+        "Issue 评论采样达到 100 条上限，回复统计可能偏低"
+      ]
+    },
+    "prs": {
+      "window_days": 90,
+      "sampled": 100,
+      "created_window": 13,
+      "human_created_window": 2,
+      "merged_window": 11,
+      "closed_unmerged_window": 4,
+      "human_closed_unmerged_window": 4,
+      "open_window": 1,
+      "stale_open_count": 7,
+      "bot_pr_count": 11,
+      "human_pr_count": 2,
+      "auto_merge_prs": 1,
+      "median_merge_hours": 0.9633333333333334,
+      "merged_samples": 4,
+      "bot_merged_samples": 0,
+      "human_merged_samples": 4,
+      "detail_truncated": false,
+      "sample_truncated": true,
+      "bot_pr_share": 0.8461538461538461,
+      "merge_rate": 0.7333333333333333,
+      "bot_merge_share": 0.0,
+      "sample_details": [
+        {
+          "number": 7628,
+          "title": "Bump the actions group with 3 updates",
+          "author": "dependabot[bot]",
+          "merged_by": "nateprewitt",
+          "merged_by_is_bot": false,
+          "review_comments": 0,
+          "comments": 0,
+          "commits": 1,
+          "changed_files": 1
+        },
+        {
+          "number": 7609,
+          "title": "Update lock-issues.yml to latest dependencies",
+          "author": "nateprewitt",
+          "merged_by": "nateprewitt",
+          "merged_by_is_bot": false,
+          "review_comments": 0,
+          "comments": 0,
+          "commits": 1,
+          "changed_files": 1
+        },
+        {
+          "number": 7603,
+          "title": "Bump https://github.com/astral-sh/ruff-pre-commit from v0.16.0 to 0.16.1 in the ",
+          "author": "dependabot[bot]",
+          "merged_by": "sigmavirus24",
+          "merged_by_is_bot": false,
+          "review_comments": 0,
+          "comments": 0,
+          "commits": 1,
+          "changed_files": 1
+        },
+        {
+          "number": 7596,
+          "title": "Bump the actions group with 2 updates",
+          "author": "dependabot[bot]",
+          "merged_by": "nateprewitt",
+          "merged_by_is_bot": false,
+          "review_comments": 0,
+          "comments": 0,
+          "commits": 1,
+          "changed_files": 5
+        }
+      ],
+      "warnings": [
+        "PR 采样达到 100 条上限，统计为下限"
+      ]
+    },
+    "releases": {
+      "last_release_at": "2026-05-14T19:27:15+00:00",
+      "last_release_age_days": 155,
+      "releases_window": 0,
+      "releases_365d": 5,
+      "total_fetched": 19,
+      "prerelease_only": false,
+      "warnings": []
+    },
+    "warnings": [],
+    "truncated": false,
+    "fetched_at": "2026-10-17T14:32:41.940548+00:00"
+  },
+  "framework": {
+    "runtime": "Python",
+    "status": "current",
+    "score": 100,
+    "declared": [
+      "3.10",
+      "3.11",
+      "3.12",
+      "3.13",
+      "3.14",
+      "3.15"
+    ],
+    "latest_supported": "3.15",
+    "eol_declared": [
+      "3.10"
+    ],
+    "supported_cycles": [
+      "3.15",
+      "3.14",
+      "3.13",
+      "3.12",
+      "3.11"
+    ],
+    "gap": 0,
+    "evidence": [
+      "声明测试/支持的 Python 版本：3.10、3.11、3.12、3.13、3.14、3.15（PyPI classifiers）",
+      "已跟进当前最新 Python 3.15",
+      "以下声明支持的 Python 版本已结束官方支持：3.10（EOL 2026-10-01）"
+    ],
+    "details": {
+      "runtime": "Python",
+      "declared": [
+        "3.10",
+        "3.11",
+        "3.12",
+        "3.13",
+        "3.14",
+        "3.15"
+      ],
+      "latest_runtime": "3.15",
+      "supported_cycles": [],
+      "eol_declared": [
+        "3.10"
+      ]
+    },
+    "warnings": []
+  },
+  "security": {
+    "ecosystem": "pypi",
+    "package": "requests",
+    "version": "2.34.2",
+    "vulns_current": [],
+    "history_count": 8,
+    "fixed_count": 8,
+    "deps_checked": 0,
+    "deps_total": 0,
+    "dep_risks": [],
+    "warnings": [],
+    "db_available": true
+  },
+  "dep_risks": [
+    {
+      "name": "charset_normalizer",
+      "ecosystem": "pypi",
+      "spec": "<4,>=2",
+      "checked_version": "3.5.2",
+      "vulns": [],
+      "error": ""
+    },
+    {
+      "name": "idna",
+      "ecosystem": "pypi",
+      "spec": "<4,>=2.5",
+      "checked_version": "3.20",
+      "vulns": [],
+      "error": ""
+    },
+    {
+      "name": "urllib3",
+      "ecosystem": "pypi",
+      "spec": "<3,>=1.26",
+      "checked_version": "2.8.0",
+      "vulns": [],
+      "error": ""
+    },
+    {
+      "name": "certifi",
+      "ecosystem": "pypi",
+      "spec": ">=2023.5.7",
+      "checked_version": "2026.7.22",
+      "vulns": [],
+      "error": ""
+    }
+  ],
+  "dimensions": [
+    {
+      "key": "maintenance",
+      "title": "维护活跃度",
+      "weight": 20.0,
+      "score": 82,
+      "status": "good",
+      "available": true,
+      "metrics": {
+        "commits_window": 11,
+        "human_commits": 1,
+        "bot_commits": 10,
+        "substantive_human_commits": 0,
+        "chore_human_commits": 1,
+        "unique_human_authors": 1,
+        "top_author_share": 1.0,
+        "last_commit_age_days": 25,
+        "active_weeks": 0,
+        "releases_window": 0,
+        "releases_365d": 5,
+        "last_release_age_days": 155,
+        "stars": 54472,
+        "archived": false
+      },
+      "evidence": [
+        "近 90 天提交 11 次（真人 1 / 机器人 10）",
+        "真人提交中功能/修复类 0 次、CI/依赖类 1 次；真人贡献者 1 人，最大贡献者占 100%",
+        "最近提交：2026-09-21（25 天前）",
+        "⚠ 真人提交全部是 CI / 依赖类维护，代码本身没有实质变化",
+        "最近发布：2026-05-14（5 个月前），近一年 5 次",
+        "仓库 54.5k stars · 13.1k forks"
+      ],
+      "deductions": [
+        {
+          "points": 12,
+          "reason": "近 90 天真人的提交全是 CI/依赖类维护，没有功能开发或缺陷修复"
+        },
+        {
+          "points": 6,
+          "reason": "提交中机器人占比 91%"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "key": "issues",
+      "title": "Issue 响应",
+      "weight": 22.0,
+      "score": 100,
+      "status": "good",
+      "available": true,
+      "metrics": {
+        "sampled": 32,
+        "opened_window": 18,
+        "maintainer_replied": 5,
+        "human_replied": 17,
+        "closed_by_maintainer": 5,
+        "closed_window": 8,
+        "bot_comment_share": 0.04225352112676056,
+        "median_first_human_response_hours": 3.5813888888888887,
+        "median_maintainer_response_hours": 6.0775,
+        "unanswered_open": 1,
+        "open_count": 17,
+        "human_reply_ratio": 0.9444444444444444,
+        "governance": true
+      },
+      "evidence": [
+        "近 90 天有更新的 Issue 采样 32 条，其中新开 18 条",
+        "获得维护者回复 5 条、真人回复 17 条、维护者关闭 5 条",
+        "首次真人响应中位数：3.6 小时",
+        "首次维护者响应中位数：6.1 小时",
+        "窗口内评论 71 条，机器人占 4%",
+        "当前开放 Issue 17 条，其中窗口内无人回复 1 条"
+      ],
+      "deductions": [],
+      "notes": [
+        "窗口内新开 Issue 有 94% 得到真人回复",
+        "近 90 天维护者处理了 5 条 Issue，响应能力正常"
+      ]
+    },
+    {
+      "key": "prs",
+      "title": "PR 健康度",
+      "weight": 13.0,
+      "score": 96,
+      "status": "good",
+      "available": true,
+      "metrics": {
+        "sampled": 100,
+        "created_window": 13,
+        "human_created": 2,
+        "bot_created": 11,
+        "merged_window": 11,
+        "closed_unmerged_window": 4,
+        "open_window": 1,
+        "stale_open": 7,
+        "bot_pr_share": 0.8461538461538461,
+        "merge_rate": 0.7333333333333333,
+        "bot_merge_share": 0.0,
+        "merged_samples": 4,
+        "median_merge_hours": 0.9633333333333334,
+        "governance": true,
+        "sampled_prs_with_review_comments": 0
+      },
+      "evidence": [
+        "近 90 天新开 PR 13 条（真人 2 / 机器人 11）",
+        "窗口内合并 11 条、由真人关闭未合并 4 条、关闭未合并合计 4 条",
+        "合并耗时中位数：< 1 小时",
+        "窗口内新开且仍未合并的 PR：1 条",
+        "机器人提交的 PR 占 85%",
+        "抽查 4 个已合并 PR：机器人合并 0 个、真人合并 4 个"
+      ],
+      "deductions": [
+        {
+          "points": 4,
+          "reason": "抽查的 4 个合并 PR 都没有代码评审评论"
+        }
+      ],
+      "notes": [
+        "真人 PR 2 条 / 机器人 PR 11 条",
+        "窗口内有 1 个 PR 启用了 auto-merge",
+        "PR 采样达到 100 条上限，统计为下限"
+      ]
+    },
+    {
+      "key": "framework",
+      "title": "运行时 / 框架",
+      "weight": 13.0,
+      "score": 92,
+      "status": "good",
+      "available": true,
+      "metrics": {
+        "runtime": "Python",
+        "declared": [
+          "3.10",
+          "3.11",
+          "3.12",
+          "3.13",
+          "3.14",
+          "3.15"
+        ],
+        "latest_runtime": "3.15",
+        "supported_cycles": [],
+        "eol_declared": [
+          "3.10"
+        ],
+        "gap": 0
+      },
+      "evidence": [
+        "声明测试/支持的 Python 版本：3.10、3.11、3.12、3.13、3.14、3.15（PyPI classifiers）",
+        "已跟进当前最新 Python 3.15",
+        "以下声明支持的 Python 版本已结束官方支持：3.10（EOL 2026-10-01）"
+      ],
+      "deductions": [
+        {
+          "points": 8,
+          "reason": "仍声明支持 1 个已 EOL 的 Python 版本"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "key": "security",
+      "title": "自身漏洞",
+      "weight": 20.0,
+      "score": 100,
+      "status": "good",
+      "available": true,
+      "metrics": {
+        "unfixed_count": 0,
+        "critical": 0,
+        "high": 0,
+        "medium": 0,
+        "low": 0,
+        "history_count": 8,
+        "fixed_count": 8,
+        "max_severity": "NONE"
+      },
+      "evidence": [
+        "OSV.dev 未发现影响 requests 2.34.2 的未修复漏洞（历史公告 8 条，均已在当前版本前修复）"
+      ],
+      "deductions": [],
+      "notes": []
+    },
+    {
+      "key": "dependencies",
+      "title": "依赖安全",
+      "weight": 12.0,
+      "score": 100,
+      "status": "good",
+      "available": true,
+      "metrics": {
+        "deps_total": 4,
+        "deps_checked": 4,
+        "deps_failed": 0,
+        "deps_with_vulns": 0,
+        "dep_critical_high": 0,
+        "dep_medium": 0
+      },
+      "evidence": [
+        "检查 4/4 个直接运行时依赖",
+        "直接依赖中未发现影响当前解析版本的已知漏洞",
+        "提示：未锁定版本的依赖按「当前最新版本」评估；完整 SBOM 分析请结合 pip-audit / npm audit"
+      ],
+      "deductions": [],
+      "notes": []
+    }
+  ],
+  "raw_total": 94.8,
+  "total_score": 94.8,
+  "grade": "A",
+  "verdict": "可以放心使用",
+  "verdict_level": "good",
+  "confidence": "high",
+  "confidence_reasons": [
+    "包元数据 + GitHub 活动 + 漏洞库均可用，数据覆盖完整",
+    "PR 数据基于最近 100 条采样",
+    "PR 合并者仅抽查 4 个已合并 PR",
+    "漏洞数据来自 OSV.dev（覆盖 GHSA / CVE / PyPA 等公告）"
+  ],
+  "hard_flags": [],
+  "recommendations": [
+    "当前版本没有已知未修复漏洞；保持版本更新，并订阅安全公告",
+    "运行时支持跟上了官方节奏（Python 3.15）",
+    "整体判断：可以正常使用；建议锁定主版本并持续跟踪 Release / 安全公告"
+  ],
+  "warnings": [],
+  "sources": [
+    {
+      "name": "pypi registry",
+      "url": "https://pypi.org/pypi/requests/json",
+      "retrieved_at": "2026-10-17T14:32:41.928475+00:00",
+      "ok": true,
+      "note": ""
+    },
+    {
+      "name": "GitHub API",
+      "url": "https://github.com/psf/requests",
+      "retrieved_at": "2026-10-17T14:32:41.928475+00:00",
+      "ok": true,
+      "note": ""
+    },
+    {
+      "name": "endoflife.date",
+      "url": "https://endoflife.date",
+      "retrieved_at": "2026-10-17T14:32:41.928475+00:00",
+      "ok": true,
+      "note": ""
+    },
+    {
+      "name": "OSV.dev",
+      "url": "https://osv.dev",
+      "retrieved_at": "2026-10-17T14:32:41.928475+00:00",
+      "ok": true,
+      "note": ""
+    }
+  ],
+  "tool_version": "1.0.0",
+  "offline": false,
+  "duration_seconds": 4.4,
+  "extra": {
+    "github_remaining": 23,
+    "github_limit": 60,
+    "requests_made": 3,
+    "cache_hits": 16,
+    "offline_hits": 0,
+    "window_days": 90
+  },
+  "schema_version": 1
+}

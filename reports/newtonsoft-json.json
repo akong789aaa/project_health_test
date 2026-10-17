@@ -1,0 +1,438 @@
+{
+  "input": "nuget:Newtonsoft.Json",
+  "target": {
+    "ecosystem": "nuget",
+    "name": "Newtonsoft.Json",
+    "version": null,
+    "repo_override": null,
+    "raw_input": "nuget:Newtonsoft.Json"
+  },
+  "generated_at": "2026-10-17T14:44:18+00:00",
+  "package": {
+    "ecosystem": "nuget",
+    "name": "Newtonsoft.Json",
+    "version": "13.0.4",
+    "latest_version": "13.0.4",
+    "published_at": "2025-09-16T08:13:09.313000+00:00",
+    "release_count": 55,
+    "summary": "Json.NET is a popular high-performance JSON framework for .NET",
+    "homepage": "https://www.newtonsoft.com/json",
+    "repo_url": "",
+    "license": "MIT",
+    "deprecated": false,
+    "deprecation_message": "",
+    "requires_python": "",
+    "python_versions": [],
+    "node_engines": "",
+    "node_versions": [],
+    "target_frameworks": [
+      "net20",
+      "net35",
+      "net40",
+      "net45",
+      "netstandard1.0",
+      "netstandard1.3",
+      "net6.0",
+      "netstandard2.0"
+    ],
+    "dependencies": [
+      {
+        "name": "Microsoft.CSharp",
+        "spec": "[4.3.0, )",
+        "kind": "runtime",
+        "ecosystem": "nuget"
+      },
+      {
+        "name": "NETStandard.Library",
+        "spec": "[1.6.1, )",
+        "kind": "runtime",
+        "ecosystem": "nuget"
+      },
+      {
+        "name": "System.ComponentModel.TypeConverter",
+        "spec": "[4.3.0, )",
+        "kind": "runtime",
+        "ecosystem": "nuget"
+      },
+      {
+        "name": "System.Runtime.Serialization.Primitives",
+        "spec": "[4.3.0, )",
+        "kind": "runtime",
+        "ecosystem": "nuget"
+      },
+      {
+        "name": "System.Runtime.Serialization.Formatters",
+        "spec": "[4.3.0, )",
+        "kind": "runtime",
+        "ecosystem": "nuget"
+      },
+      {
+        "name": "System.Xml.XmlDocument",
+        "spec": "[4.3.0, )",
+        "kind": "runtime",
+        "ecosystem": "nuget"
+      }
+    ],
+    "release_dates": [
+      "2011-01-08T22:12:57.713000+00:00",
+      "2011-04-22T01:18:06.287000+00:00",
+      "2011-04-23T04:49:46.677000+00:00",
+      "2011-10-02T02:29:53.283000+00:00",
+      "2011-11-19T09:38:20.143000+00:00",
+      "2011-12-10T21:17:16.263000+00:00",
+      "2012-01-23T07:56:04.690000+00:00",
+      "2012-01-24T09:35:40.127000+00:00",
+      "2012-02-12T01:55:12.167000+00:00",
+      "2012-03-20T09:12:47.380000+00:00",
+      "2012-04-11T11:18:28.687000+00:00",
+      "2012-04-13T14:02:58.777000+00:00",
+      "2012-04-24T22:16:19.857000+00:00",
+      "2012-05-08T09:08:45.257000+00:00",
+      "2012-05-30T08:23:30.193000+00:00",
+      "2012-06-09T07:42:21.547000+00:00",
+      "2012-08-04T02:50:14.437000+00:00",
+      "2012-09-08T10:48:50.670000+00:00",
+      "2012-10-07T20:20:44.033000+00:00",
+      "2012-11-20T10:02:18.983000+00:00",
+      "2013-04-07T07:19:15.433000+00:00",
+      "2013-04-08T11:51:51.753000+00:00",
+      "2013-04-14T01:30:54.227000+00:00",
+      "2013-04-25T04:48:23.967000+00:00",
+      "2013-05-08T09:22:03.657000+00:00",
+      "2013-06-06T03:11:18.287000+00:00",
+      "2013-10-14T10:30:44.237000+00:00",
+      "2013-10-17T00:18:13.580000+00:00",
+      "2014-02-01T11:01:37.443000+00:00",
+      "2014-03-30T05:55:21.737000+00:00",
+      "2014-04-27T05:41:11.613000+00:00",
+      "2014-08-03T09:19:01.703000+00:00",
+      "2014-09-06T23:18:33.987000+00:00",
+      "2014-10-24T10:57:02.883000+00:00",
+      "2014-12-23T00:09:09.887000+00:00",
+      "2015-01-11T07:30:45.850000+00:00",
+      "2015-06-22T12:00:36.440000+00:00",
+      "2015-12-29T01:03:30.737000+00:00",
+      "2016-01-09T01:06:39.390000+00:00",
+      "2016-03-14T09:03:38.617000+00:00",
+      "2016-06-22T08:11:45.490000+00:00",
+      "2017-03-20T07:18:50.840000+00:00",
+      "2017-04-02T06:37:50.910000+00:00",
+      "2017-06-18T02:10:29.603000+00:00",
+      "2018-02-17T20:59:20.773000+00:00",
+      "2018-03-24T20:18:14.760000+00:00",
+      "2018-11-27T18:11:37.080000+00:00",
+      "2019-04-22T01:21:49.900000+00:00",
+      "2019-11-09T01:27:30.723000+00:00",
+      "2021-03-22T20:10:49.407000+00:00",
+      "2022-11-24T03:02:39.500000+00:00",
+      "2023-03-08T07:42:54.647000+00:00",
+      "2025-09-16T08:13:09.313000+00:00",
+      "2026-09-21T06:44:49.787000+00:00",
+      "2026-09-21T10:12:19.923000+00:00"
+    ],
+    "yanked": false,
+    "source": "https://www.nuget.org/packages/Newtonsoft.Json",
+    "extra": {}
+  },
+  "repo": null,
+  "framework": {
+    "runtime": ".NET",
+    "status": "eol",
+    "score": 18,
+    "declared": [
+      "net20",
+      "net35",
+      "net40",
+      "net45",
+      "netstandard1.0",
+      "netstandard1.3",
+      "net6.0",
+      "netstandard2.0"
+    ],
+    "latest_supported": "10",
+    "eol_declared": [],
+    "supported_cycles": [
+      "9",
+      "8",
+      "10"
+    ],
+    "gap": 4,
+    "evidence": [
+      "目标框架：net20、net35、net40、net45、netstandard1.0、netstandard1.3、net6.0、netstandard2.0",
+      "最新目标框架 net6.0 已 EOL，官方最新为 .NET 10",
+      "同时提供 netstandard1.0、netstandard1.3、netstandard2.0 兼容目标，可在受支持的 .NET 上使用"
+    ],
+    "details": {
+      "max_tfm": "net6.0",
+      "runtime": ".NET",
+      "declared": [
+        "net20",
+        "net35",
+        "net40",
+        "net45",
+        "netstandard1.0",
+        "netstandard1.3",
+        "net6.0",
+        "netstandard2.0"
+      ],
+      "latest_runtime": "10",
+      "supported_cycles": [
+        "8",
+        "9",
+        "10"
+      ],
+      "eol_declared": []
+    },
+    "warnings": []
+  },
+  "security": {
+    "ecosystem": "nuget",
+    "package": "Newtonsoft.Json",
+    "version": "13.0.4",
+    "vulns_current": [],
+    "history_count": 1,
+    "fixed_count": 1,
+    "deps_checked": 0,
+    "deps_total": 0,
+    "dep_risks": [],
+    "warnings": [],
+    "db_available": true
+  },
+  "dep_risks": [
+    {
+      "name": "Microsoft.CSharp",
+      "ecosystem": "nuget",
+      "spec": "[4.3.0, )",
+      "checked_version": "4.7.0",
+      "vulns": [],
+      "error": ""
+    },
+    {
+      "name": "NETStandard.Library",
+      "ecosystem": "nuget",
+      "spec": "[1.6.1, )",
+      "checked_version": "2.0.3",
+      "vulns": [],
+      "error": ""
+    },
+    {
+      "name": "System.ComponentModel.TypeConverter",
+      "ecosystem": "nuget",
+      "spec": "[4.3.0, )",
+      "checked_version": "4.3.0",
+      "vulns": [],
+      "error": ""
+    },
+    {
+      "name": "System.Runtime.Serialization.Primitives",
+      "ecosystem": "nuget",
+      "spec": "[4.3.0, )",
+      "checked_version": "4.3.0",
+      "vulns": [],
+      "error": ""
+    },
+    {
+      "name": "System.Runtime.Serialization.Formatters",
+      "ecosystem": "nuget",
+      "spec": "[4.3.0, )",
+      "checked_version": "10.0.13",
+      "vulns": [],
+      "error": ""
+    }
+  ],
+  "dimensions": [
+    {
+      "key": "maintenance",
+      "title": "维护活跃度",
+      "weight": 20.0,
+      "score": 80,
+      "status": "warn",
+      "available": true,
+      "metrics": {
+        "releases_365d": 2,
+        "releases_window": 2,
+        "last_release_age_days": 26
+      },
+      "evidence": [
+        "最近发布：2026-09-21（26 天前），近一年 2 次",
+        "发布版本数 55，其中 55 个有发布时间记录"
+      ],
+      "deductions": [],
+      "notes": [
+        "没有 GitHub 仓库数据，仅根据发布记录评估"
+      ]
+    },
+    {
+      "key": "issues",
+      "title": "Issue 响应",
+      "weight": 22.0,
+      "score": 100,
+      "status": "unknown",
+      "available": false,
+      "metrics": {},
+      "evidence": [],
+      "deductions": [],
+      "notes": [
+        "缺少 GitHub 仓库数据，无法评估 Issue 响应"
+      ]
+    },
+    {
+      "key": "prs",
+      "title": "PR 健康度",
+      "weight": 13.0,
+      "score": 100,
+      "status": "unknown",
+      "available": false,
+      "metrics": {},
+      "evidence": [],
+      "deductions": [],
+      "notes": [
+        "缺少 GitHub 仓库数据，无法评估 PR 健康度"
+      ]
+    },
+    {
+      "key": "framework",
+      "title": "运行时 / 框架",
+      "weight": 13.0,
+      "score": 0,
+      "status": "bad",
+      "available": true,
+      "metrics": {
+        "max_tfm": "net6.0",
+        "runtime": ".NET",
+        "declared": [
+          "net20",
+          "net35",
+          "net40",
+          "net45",
+          "netstandard1.0",
+          "netstandard1.3",
+          "net6.0",
+          "netstandard2.0"
+        ],
+        "latest_runtime": "10",
+        "supported_cycles": [
+          "8",
+          "9",
+          "10"
+        ],
+        "eol_declared": [],
+        "gap": 4
+      },
+      "evidence": [
+        "目标框架：net20、net35、net40、net45、netstandard1.0、netstandard1.3、net6.0、netstandard2.0",
+        "最新目标框架 net6.0 已 EOL，官方最新为 .NET 10",
+        "同时提供 netstandard1.0、netstandard1.3、netstandard2.0 兼容目标，可在受支持的 .NET 上使用"
+      ],
+      "deductions": [
+        {
+          "points": 20,
+          "reason": "最新目标框架 net6.0 已结束支持"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "key": "security",
+      "title": "自身漏洞",
+      "weight": 20.0,
+      "score": 100,
+      "status": "good",
+      "available": true,
+      "metrics": {
+        "unfixed_count": 0,
+        "critical": 0,
+        "high": 0,
+        "medium": 0,
+        "low": 0,
+        "history_count": 1,
+        "fixed_count": 1,
+        "max_severity": "NONE"
+      },
+      "evidence": [
+        "OSV.dev 未发现影响 Newtonsoft.Json 13.0.4 的未修复漏洞（历史公告 1 条，均已在当前版本前修复）"
+      ],
+      "deductions": [],
+      "notes": []
+    },
+    {
+      "key": "dependencies",
+      "title": "依赖安全",
+      "weight": 12.0,
+      "score": 100,
+      "status": "good",
+      "available": true,
+      "metrics": {
+        "deps_total": 6,
+        "deps_checked": 5,
+        "deps_failed": 0,
+        "deps_with_vulns": 0,
+        "dep_critical_high": 0,
+        "dep_medium": 0
+      },
+      "evidence": [
+        "检查 5/6 个直接运行时依赖（仅检查前 5 个，可用 --dep-check 调整）",
+        "直接依赖中未发现影响当前解析版本的已知漏洞",
+        "提示：未锁定版本的依赖按「当前最新版本」评估；完整 SBOM 分析请结合 pip-audit / npm audit"
+      ],
+      "deductions": [],
+      "notes": []
+    }
+  ],
+  "raw_total": 73.8,
+  "total_score": 73.8,
+  "grade": "B",
+  "verdict": "基本可用，注意跟踪",
+  "verdict_level": "good",
+  "confidence": "medium",
+  "confidence_reasons": [
+    "Issue 响应：缺少 GitHub 仓库数据，无法评估 Issue 响应",
+    "PR 健康度：缺少 GitHub 仓库数据，无法评估 PR 健康度",
+    "缺少 GitHub 数据：维护活跃度、Issue、PR 维度覆盖有限",
+    "漏洞数据来自 OSV.dev（覆盖 GHSA / CVE / PyPA 等公告）"
+  ],
+  "hard_flags": [],
+  "recommendations": [
+    "当前版本没有已知未修复漏洞；保持版本更新，并订阅安全公告",
+    "目标运行时落后（.NET）：目标框架：net20、net35、net40、net45、netstandard1.0、netstandard1.3、net6.0、netstandard2.0；最新目标框架 net6.0 已 EOL，官方最新为 .NET 10。建议升级 target framework / requires_python 下限，或评估是否被新版本运行时官方支持",
+    "整体判断：可以使用，但引入前建议验证关键路径，并跟踪维护状态变化"
+  ],
+  "warnings": [
+    "包元数据中没有可识别的 GitHub 仓库地址，无法评估维护 / Issue / PR 维度"
+  ],
+  "sources": [
+    {
+      "name": "nuget registry",
+      "url": "https://www.nuget.org/packages/Newtonsoft.Json",
+      "retrieved_at": "2026-10-17T14:44:18+00:00",
+      "ok": true,
+      "note": ""
+    },
+    {
+      "name": "endoflife.date",
+      "url": "https://endoflife.date",
+      "retrieved_at": "2026-10-17T14:44:18+00:00",
+      "ok": true,
+      "note": ""
+    },
+    {
+      "name": "OSV.dev",
+      "url": "https://osv.dev",
+      "retrieved_at": "2026-10-17T14:44:18+00:00",
+      "ok": true,
+      "note": ""
+    }
+  ],
+  "tool_version": "1.0.0",
+  "offline": false,
+  "duration_seconds": 9.83,
+  "extra": {
+    "github_remaining": null,
+    "github_limit": null,
+    "requests_made": 10,
+    "cache_hits": 0,
+    "offline_hits": 0,
+    "window_days": 90
+  },
+  "schema_version": 1
+}

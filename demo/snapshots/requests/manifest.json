@@ -1,0 +1,17 @@
+{
+  "name": "requests",
+  "input": "pypi:requests",
+  "description": "长期维护的 Python HTTP 库（健康样例）",
+  "repo_override": null,
+  "recorded_at": "2026-10-17T14:32:41Z",
+  "recorded_by": "oss-health/1.0.0",
+  "window_days": 90,
+  "pr_detail": 4,
+  "dep_check": 8,
+  "tool_version": "1.0.0",
+  "score": 95,
+  "grade": "A",
+  "verdict": "可以放心使用",
+  "confidence": "high",
+  "offline": false
+}
